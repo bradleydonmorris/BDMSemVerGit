@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "BDMSemVerGit": {
+      "commandName": "Project",
+      "commandLineArgs": "bump --verbose",
+      "workingDirectory": "C:\\Users\\bradley.morris\\source\\repos\\BDMTestingADO\\SupremeAwesomeTool"
+    }
+  }
+}

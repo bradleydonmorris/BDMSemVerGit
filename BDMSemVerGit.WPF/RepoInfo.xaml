@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="BDMSemVerGit.WPF.RepoInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BDMSemVerGit.WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="1000" Loaded="UserControl_Loaded"
+			 Margin="10,10,10,10">
+	<Border CornerRadius="2"
+                BorderBrush="Gray"
+                Background="White"
+                BorderThickness="1"
+                Padding="6">
+		<StackPanel HorizontalAlignment="Left" Margin="10,10,10,10" Orientation="Vertical">
+			<TextBlock x:Name="txtRepoName" HorizontalAlignment="Left" Margin="10,0,10,0" FontSize="18"></TextBlock>
+			<TextBlock x:Name="txtRepoDirectory" HorizontalAlignment="Left" Margin="10,0,10,0" FontSize="16"></TextBlock>
+			<TextBlock x:Name="txtCurrentBranch" HorizontalAlignment="Left" Margin="10,0,10,0" FontSize="16"></TextBlock>
+			<StackPanel Orientation="Horizontal">
+				<Button x:Name="btnOpen" HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="16" Padding="10,0,10,4" Click="btnOpen_Click">Open</Button>
+				<Button x:Name="btnBumpVersion" HorizontalAlignment="Left" Margin="10,10,10,10" FontSize="16" Padding="10,0,10,4" Click="btnBumpVersion_Click">Bump Version</Button>
+			</StackPanel>
+		</StackPanel>
+	</Border>
+</UserControl>

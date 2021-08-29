@@ -1,0 +1,1 @@
+﻿ - {@Link} ({@Scope}) {@Summary}

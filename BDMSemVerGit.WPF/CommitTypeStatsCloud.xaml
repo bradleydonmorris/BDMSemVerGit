@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="BDMSemVerGit.WPF.CommitTypeStatsCloud"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BDMSemVerGit.WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="48" d:DesignWidth="800" Loaded="UserControl_Loaded">
+	<WrapPanel Orientation="Horizontal" Width="Auto">
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtBreaks" Tag="Breaks: {count}" Background="#FF0000" Padding="10,0,10,0">Breaking Changes</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtFeatures" Tag="Features: {count}" Background="#C2EDCE" Padding="10,0,10,0">Features: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtBugFixes" Tag="Fixes: {count}" Background="#CBD5F0" Padding="10,0,10,0">Fixes: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtDocumentation" Tag="Docs: {count}" Background="#6DAFFE" Padding="10,0,10,0">Docs: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtStyles" Tag="Styles: {count}" Background="#F9D326" Padding="10,0,10,0">Styles: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtCodeRefactoring" Tag="Refactors: {count}" Background="#F48882" Padding="10,0,10,0">Refactors: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtPerformanceImprovements" Tag="Performance: {count}" Background="#D1A080" Padding="10,0,10,0">Performance: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtTests" Tag="Tests: {count}" Background="#BD9DEA" Padding="10,0,10,0">Tests: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtBuilds" Tag="Builds: {count}" Background="#8F5B34" Padding="10,0,10,0">Builds: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtContinuousIntegrations" Tag="CI: {count}" Background="#8A9EA7" Padding="10,0,10,0">CI: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtChores" Tag="Chores: {count}" Background="#E3D477" Padding="10,0,10,0">Chores: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtReverts" Tag="Reverts: {count}" Background="#699E3C" Padding="10,0,10,0">Reverts: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtInvalidType" Tag="Invalids: {count}" Background="#F53163" Padding="10,0,10,0">Invalids: 0</TextBlock>
+		</Border>
+		<Border CornerRadius="2" BorderBrush="Gray" Background="White" BorderThickness="1" Padding="1" Margin="5">
+			<TextBlock x:Name="txtNonConventionalCommit" Tag="Non Conventionals: {count}" Background="#EFB7BA" Padding="10,0,10,0">Non Conventionals: 0</TextBlock>
+		</Border>
+	</WrapPanel>
+</UserControl>

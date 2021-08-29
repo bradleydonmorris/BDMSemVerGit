@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Version>0.0.1</Version>
+    <PackageProjectUrl>https://bradleydonmorris.me/packages/BDMSemVerGit</PackageProjectUrl>
+    <Copyright>Copyright © 2021 Bradley Don Morris</Copyright>
+    <Authors>Bradley Don Morris</Authors>
+    <RepositoryUrl>https://github.com/bradleydonmorris/BDMSemVerGit</RepositoryUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Description>CLI version of conventional commit and semantic version helper.</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BDMCommandLine" Version="0.0.1" />
+    <PackageReference Include="Markdig" Version="0.26.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.115" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BDMSemVerGit.Engine\BDMSemVerGit.Engine.csproj" />
+  </ItemGroup>
+
+</Project>
